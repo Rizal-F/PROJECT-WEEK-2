@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="icon" href="assets/img/logo-paudqu.png">
+        <title>PAUDQU SALSABILA</title>
+     
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/form.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navAll">        
+                <div class="left">
+                    <a href="index.html"><img src="assets/img/logo-paudqu.png" style="width: 50px;" alt="logo"></a>
+                    <ul>
+                        <li ><a href="index.html" class="home">Home</a></li>
+                        <li><a href="blog.html" class="blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <button class=""><a href="contact.html">Contact Me</a></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- akhir dari nav -->
+
+        <form class="form_card">
+            <div style="text-align: center; color: black;">
+                <h1>Masukan Pesan</h1>
+                <br>
+            </div>
+            <div>
+                <Label for="name">Nama</Label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Input Nama"
+                   >
+            </div>
+
+            <div>
+                <Label for="mail">Email</Label>
+                <input type="email" id="mail"
+                    placeholder="Input Email"
+                    >
+            </div>
+            
+            <div>
+                <Label for="phone">Nomor Handphone</Label>
+                <input type="text" id="phone"
+                    placeholder="Input Nomor HP"
+                    >
+            </div>
+            
+            <!-- <div class="">
+                <label>Keperluan</label><br>
+                <label>
+                    <input type="checkbox" class="" id="daftar" value="Mendaftar">Mendaftar
+                </label>
+                <label for="">
+                    <input type="checkbox" class="" id="lamar" value="Melamar">Melamar
+                </label>
+            </div> -->
+
+            <div>
+                <Label for="sub">Subject</Label>
+                <select name="" id="subs">
+                    <option value="">- Pilih disini -</option>
+                    <option value="Daftar Siswa">Daftar Siswa</option>
+                    <option value="Bertanya tentang Sekolah">Bertanya tentang Sekolah</option>
+                    <option value="Melamar sebagai Guru">Melamar sebagai Guru</option>
+                </select>
+            </div>
+           
+            <div>
+                <Label for="pesan">Isi Pesan</Label>
+                <textarea cols="20px" rows="5px" id="pesan"
+                    placeholder="Type Here"
+                    ></textarea>
+            </div>
+       
+            <div class="submits">
+                <button 
+                    type="button" onclick="submitData()"
+                    > 
+                Submit</button>
+            </div>
+        
+        </form>
+        </div>
+    </body>
+</html>
