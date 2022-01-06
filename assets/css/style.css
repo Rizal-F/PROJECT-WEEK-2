@@ -210,7 +210,7 @@ button:hover {
     background-color: greenyellow;
   }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     /* body {
         overflow: hidden;
     } */
