@@ -210,11 +210,11 @@ button:hover {
     background-color: greenyellow;
   }
 
-  @media (min-width: 320px) and (max-width: 767px) {
+/* @media (min-width: 320px) and (max-width: 767px) { */
     /* body {
         overflow: hidden;
     } */
-
+/* 
     * {
         margin: 0;
         padding: 0;
@@ -254,11 +254,10 @@ button:hover {
         display: flex;
         align-items: center;
         flex-direction: column;
-    }
+    } */
 
-    .section .left {  
+    /* .section .left {  
         width: 100%;
-        justify-content: space-between;
     }
 
     .section .right {
@@ -269,17 +268,17 @@ button:hover {
     .right .skill-section {
         padding: 5px;
     }
-
-    input, select, textarea {
+/* cantact */
+    /* input, select, textarea {
         background: whitesmoke;
         width: 75%;
         border: 1px solid chartreuse;
         border-radius: 5px;
         padding: 10px;
         margin: 10px 50px;
-    }
+    }  */
 
-    label {
+    /* label {
         margin-left: 50px;
     }
 
@@ -288,4 +287,4 @@ button:hover {
     }
 
     
-}
+} */
