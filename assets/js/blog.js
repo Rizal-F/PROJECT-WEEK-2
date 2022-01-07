@@ -95,7 +95,9 @@ function firtsBlogContent(){
 
 let month = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des']
 
-function getTime(time) {  //diambil dari variable postAt diatas
+function getTime(time) {  
+  //mengaambil data dari variable postAt diatas 
+  //time sendiri adalah parameter yang berfungsi untuk index
 
 
     let date = time.getDate()
