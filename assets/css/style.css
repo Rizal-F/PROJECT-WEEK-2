@@ -32,8 +32,10 @@ nav {
 }
 
 .navAll {
-    width: 1136px;
+   
     margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -210,28 +212,21 @@ button:hover {
     background-color: greenyellow;
   }
 
-/* @media (min-width: 320px) and (max-width: 767px) { */
+@media (min-width: 320px) and (max-width: 767px) {
     /* body {
         overflow: hidden;
     } */
-/* 
+
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      nav {
-        width: 100%;
-        margin: 0 auto;
-        padding: 10px 5px;
-      }
 
     nav .navAll {
         width: 100%;
-        margin: auto;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
+        margin: 0 auto;
+        padding: 10px 5px;
     }
     
     nav .left {
@@ -243,20 +238,17 @@ button:hover {
     }
 
     .container {
-        width: 100%;
-        margin: 5px auto;
-        display: flex;
-        align-items: flex-end;
-        height: auto;
+        display: block;
+        padding: 0px;
+        margin: 0px auto;
+        width: fit-content;
     }
 
     .container .section {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    } */
+        display: block
+    } 
 
-    /* .section .left {  
+    .section .left {  
         width: 100%;
     }
 
@@ -269,16 +261,16 @@ button:hover {
         padding: 5px;
     }
 /* cantact */
-    /* input, select, textarea {
+    input, select, textarea {
         background: whitesmoke;
         width: 75%;
         border: 1px solid chartreuse;
         border-radius: 5px;
         padding: 10px;
         margin: 10px 50px;
-    }  */
+    } 
 
-    /* label {
+    label {
         margin-left: 50px;
     }
 
@@ -287,4 +279,4 @@ button:hover {
     }
 
     
-} */
+}
