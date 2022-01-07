@@ -86,10 +86,12 @@ button a {
 }*/
 
 .container {
-    width: 1136px;
+    
     margin: 5px auto;
     display: flex;
-    align-items: flex-end;    
+    align-items: flex-end;
+    padding: 0px 50px;
+    width: fit-content;  
 }
 
 .container .section {
@@ -212,7 +214,7 @@ button:hover {
     background-color: greenyellow;
   }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 1060px) {
     /* body {
         overflow: hidden;
     } */
@@ -226,7 +228,7 @@ button:hover {
     nav .navAll {
         width: 100%;
         margin: 0 auto;
-        padding: 10px 5px;
+        padding: 0px 5px;
     }
     
     nav .left {
@@ -238,9 +240,7 @@ button:hover {
     }
 
     .container {
-        display: block;
-        padding: 0px;
-        margin: 0px auto;
+        display: block;        
         width: fit-content;
     }
 
