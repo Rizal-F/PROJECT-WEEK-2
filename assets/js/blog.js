@@ -152,4 +152,4 @@ function getDistanceTime(time) {
 
 setInterval(() => {
   renderBlog()
-},60000)
+},5000)
