@@ -28,8 +28,9 @@ nav {
 }
 
 .navAll {
-  width: 1136px;
   margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -278,4 +279,30 @@ select {
   font-size: 24px;
   line-height: 140%;
   text-align: justify;
+}
+
+@media (min-width: 320px) and (max-width: 1060px) {
+  /* body {
+      overflow: hidden;
+  } */
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  nav .navAll {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px 5px;
+  }
+  
+  nav .left {
+      padding: 5px;
+  }
+
+  nav .right {
+      padding: 5px;
+  }
 }
