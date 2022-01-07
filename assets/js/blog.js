@@ -95,7 +95,7 @@ function firtsBlogContent(){
 
 let month = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des']
 
-function getTime(time) {
+function getTime(time) {  //diambil dari variable postAt diatas
 
 
     let date = time.getDate()
@@ -118,7 +118,8 @@ function getDistanceTime(time) {
   let timePost = time;
 
 
-  let distance = timeNow - timePost;
+  let distance = timeNow - timePost; //menghasilkan dalam bentuk satuan mili second
+
 
   let milisecond = 1000
   let secondInHours = 3600
@@ -127,29 +128,27 @@ function getDistanceTime(time) {
   let minutes = 60
 
 
-  let distanceDay = Math.floor(distance / (milisecond *secondInHours *hoursInDay))
+  let distanceDay = Math.floor(distance / (milisecond *secondInHours *hoursInDay)) //math.floor berfungsi untuk mebulatkan sebuah bilangan
   let distanceHours = Math.floor(distance / (milisecond *second *minutes))
   let distanceMinutes = Math.floor(distance / (milisecond * second))
   let distanceSecond = Math.floor(distance / milisecond)
 
-
-  distanceDay = Math.floor(distanceDay);
-
   if(distanceDay >= 1){
-      console.log(`${distanceDay} day ago`);
+      return `${distanceDay} day ago`;
     } else {
       if (distanceHours >= 1){
-      return(`${distanceHours} hours ago`);
+      return `${distanceHours} hours ago`;
       } else {
         if (distanceMinutes >= 1) {
-          return(`${distanceMinutes} minutes ago`);
+          return `${distanceMinutes} minutes ago`;
         } else {
-            return(`${distanceSecond} second ago`);
+            return `${distanceSecond} second ago`;
         }
       }
     }
 }
 
+// set interval berfungsi untuk menjalankan sebuah fungsi sesuai dengan jumlah intervalnya
 setInterval(() => {
   renderBlog()
 },5000)
